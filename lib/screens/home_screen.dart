@@ -108,21 +108,21 @@ class _HomeScreenState extends State<HomeScreen> {
               Icons.search,
               size: 30.0,
             ),
-            label: SizedBox.shrink().toString(),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.local_pizza,
               size: 30.0,
             ),
-            label: SizedBox.shrink().toString(),
+            label: 'Other',
           ),
           BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 15.0,
               backgroundImage: NetworkImage('http://i.imgur.com/zL4Krbz.jpg'),
             ),
-             label: SizedBox.shrink().toString(),
+             label: 'Profile',
           )
         ],
       ),
