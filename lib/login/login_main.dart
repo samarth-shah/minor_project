@@ -3,6 +3,7 @@ import 'package:flutter_travel_ui/login/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 import './Screens/login/login.dart';
 import 'constants.dart';
+import 'page/home_page.dart';
 
 class LoginMainScreen extends StatelessWidget {
   // This widget is the root of your application.
@@ -16,7 +17,7 @@ class LoginMainScreen extends StatelessWidget {
         theme: ThemeData(
           primaryColor: kPrimaryColor,
         ),
-        home: LoginScreen(),
+        home: HomePage1(),
       ),
     );
   }

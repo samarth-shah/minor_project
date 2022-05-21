@@ -39,7 +39,7 @@ class LoginForm extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Welcome Back',
+                  'SIGN IN',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                 ),
                 SizedBox(height: 40),
@@ -65,7 +65,7 @@ class LoginForm extends StatelessWidget {
                   icon: FaIcon(FontAwesomeIcons.google),
                   onPressed: () {
                     final provider = Provider.of<GoogleSignInProvider>(context, listen: false);
-                    provider.googleLogIn();
+                    provider.googleLogin();
                   },
                   label: Text("Sign In with Google"),
                 ),
