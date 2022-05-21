@@ -8,6 +8,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../login/login_main.dart';
 import '../login/page/logged_in_widget.dart';
+import '../weather/weather_main.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -21,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<IconData> _icons = [
     FontAwesomeIcons.globeAsia,
     FontAwesomeIcons.camera,
-    FontAwesomeIcons.microphoneAlt,
+    FontAwesomeIcons.temperatureArrowUp,
     FontAwesomeIcons.solidListAlt,
   ];
 
@@ -30,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return GestureDetector(
       onTap: () {
         if (index == 2) {
-          // Navigator.of(context).push(MaterialPageRoute(builder: (context) => SpeechToTextScreen()));
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Weather()));
         }
         if (index == 1) {
           Navigator.of(context)
