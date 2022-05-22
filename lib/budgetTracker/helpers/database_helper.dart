@@ -49,7 +49,8 @@ class DatabaseHelper {
 
   // SQL string to create the database
   Future _onCreate(Database db, int version) async {
-    await db.execute('''
+    await db.execute(
+        '''
           CREATE TABLE $tableTransactions (
             $columnId INTEGER PRIMARY KEY,
             $columnTitle TEXT NOT NULL,
@@ -103,6 +104,4 @@ class DatabaseHelper {
     int res = await db.delete(tableTransactions, where: '1');
     return res;
   }
-
-  // TODO: update(txn.Transaction element)
 }

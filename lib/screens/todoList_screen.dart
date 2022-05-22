@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/models/database_helper.dart';
@@ -60,7 +62,10 @@ class TodoListState extends State<TodoList> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 GestureDetector(
-                  child: Icon(Icons.delete,color: Colors.red,),
+                  child: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ),
                   onTap: () {
                     _delete(context, todoList[position]);
                   },
@@ -95,7 +100,6 @@ class TodoListState extends State<TodoList> {
     return title.substring(0, 2);
   }
 
- 
   // Returns the priority icon
   // Icon getPriorityIcon(int priority) {
   // 	switch (priority) {
@@ -147,6 +151,4 @@ class TodoListState extends State<TodoList> {
       });
     });
   }
-
-  
 }

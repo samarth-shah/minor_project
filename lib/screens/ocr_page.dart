@@ -1,5 +1,6 @@
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_vision/flutter_mobile_vision.dart';
 
@@ -41,7 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 _text,
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 40,),
+              SizedBox(
+                height: 40,
+              ),
               Center(
                 child: RaisedButton(
                   onPressed: _read,

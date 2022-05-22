@@ -1,3 +1,4 @@
+// ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -21,12 +22,10 @@ class _NewTransactionFormState extends State<NewTransactionForm> {
   final _dateFocus = FocusNode();
   final _timeFocus = FocusNode();
 
-  bool _autoValidateToggle = false;
   DateTime _selectedDate;
   TimeOfDay _selectedTime;
 
   _NewTransactionFormState() {
-    _autoValidateToggle = false;
     _selectedDate = DateTime.now();
     _selectedTime = null;
   }
@@ -90,9 +89,7 @@ class _NewTransactionFormState extends State<NewTransactionForm> {
         txnDateTime,
       );
       Navigator.of(context).pop();
-    } else {
-      _autoValidateToggle = true;
-    }
+    } else {}
   }
 
   @override

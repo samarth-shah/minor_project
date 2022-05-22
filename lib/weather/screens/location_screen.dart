@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import '../services/weather.dart';
 import '../screens/city_screen.dart';
@@ -53,7 +55,6 @@ class _LocationScreenState extends State<LocationScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            //TODO: change background image
             image: AssetImage('assets/images/BgImage.jpg'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
@@ -89,7 +90,8 @@ class _LocationScreenState extends State<LocationScreen> {
                       );
                       print(typedName);
                       if (typedName != null) {
-                        var weatherData = await weather.getCityWeather(typedName);
+                        var weatherData =
+                            await weather.getCityWeather(typedName);
                         print(typedName);
                         updateUi(weatherData);
                       }

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/budgetTracker/budget_main.dart';
@@ -6,11 +8,7 @@ import 'package:flutter_travel_ui/screens/todoList_screen.dart';
 import 'package:flutter_travel_ui/widgets/destination_carousel.dart';
 import 'package:flutter_travel_ui/widgets/hotel_carousel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../login/login_main.dart';
-import '../login/page/logged_in_widget.dart';
 import '../weather/weather_main.dart';
-import 'home_screen.dart';
 
 class HomeMainScreen extends StatefulWidget {
   @override
