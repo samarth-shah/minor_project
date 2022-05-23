@@ -5,11 +5,13 @@ class Destination {
   String city;
   String country;
   String description;
+  String url;
   List<Activity> activities;
 
   Destination({
     this.imageUrl,
     this.city,
+    this.url,
     this.country,
     this.description,
     this.activities,
@@ -610,6 +612,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Vadodara for an amazing and unforgettable adventure....',
     activities: vadodaraActivities,
+    url: 'https://goo.gl/maps/drDyLGcPNMgjsM8z5',
   ),
   Destination(
     imageUrl: 'assets/images/newdelhi.jpg',
@@ -617,6 +620,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit New Delhi for an amazing and unforgettable adventure.....',
     activities: delhiActivities,
+    url: 'https://goo.gl/maps/9RidZcYoXoshTFPu7',
   ),
   Destination(
     imageUrl: 'assets/images/mumbai.jpg',
@@ -624,6 +628,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Mumbai for an amazing and unforgettable adventure.....',
     activities: mumbaiActivities,
+    url: 'https://goo.gl/maps/e332abwdq77EgtEdA',
   ),
   
   Destination(
@@ -632,6 +637,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Kashmir for an amazing and unforgettable adventure.....',
     activities: kashmirActivities,
+    url: 'https://goo.gl/maps/ECbaFbGvLqxr9oHQ8',
   ),
   Destination(
     imageUrl: 'assets/images/goa.jpg',
@@ -639,6 +645,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Goa for an amazing and unforgettable adventure.....',
     activities: goaActivities,
+    url: 'https://goo.gl/maps/CYm99qr3g3kqFS8z6',
   ),
 
   Destination(
@@ -647,6 +654,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Surat is a city in the western Indian state of Gujarat....',
     activities: suratActivities,
+    url: 'https://goo.gl/maps/V8WAJwVUvP9CC4s26',
   ),
 
   Destination(
@@ -655,6 +663,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Hyderabad, city, Telangana state, south-central India....',
     activities: goaActivities,
+    url: 'https://goo.gl/maps/eguJDk6dCGi3ZSNx5',
   ),
 
   Destination(
@@ -663,6 +672,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Known as the “Gateway to South India,....',
     activities: chennaiActivities,
+    url: 'https://goo.gl/maps/iD2iryrd2SQF9C9x6',
   ),
 
   Destination(
@@ -671,6 +681,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'The city is surrounded by hills and dotted with forts....',
     activities: jaipurActivities,
+    url: 'https://goo.gl/maps/iE2LXuqSLsT7vmp47',
   ),
 
   Destination(
@@ -679,6 +690,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'A kaleidoscope of modern structures and British-style markets and squares...',
     activities: lucknowActivities,
+    url: 'https://goo.gl/maps/hvo22vtMVY4kQUwe7',
   ),
 
   Destination(
@@ -687,6 +699,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Agra for an amazing and unforgettable adventure....',
     activities: agraActivities,
+    url: 'https://goo.gl/maps/FqELs7mHDJGkA6486',
   ),
 
   Destination(
@@ -695,6 +708,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Bhopal for an amazing and unforgettable adventure....',
     activities: bhopalActivities,
+    url: 'https://goo.gl/maps/JGwHkLf99jwSyYRK7',
   ),
 
   Destination(
@@ -703,6 +717,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Indore for an amazing and unforgettable adventure....',
     activities: indoreActivities,
+    url: 'https://goo.gl/maps/7oh76jEaY5X5EDCK7',
   ),
 
   Destination(
@@ -711,6 +726,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Rajkot for an amazing and unforgettable adventure....',
     activities: rajkotActivities,
+    url: 'https://goo.gl/maps/RM6EnRPEMpDr1wKS9',
   ),
 
   Destination(
@@ -719,6 +735,7 @@ List<Destination> destinations = [
     country: 'India',
     description: 'Visit Amritsar for an amazing and unforgettable adventure...',
     activities: amritsarActivities,
+    url: 'https://goo.gl/maps/FaRZtoBSCCqufEVN9',
   ),
 
 

@@ -3,9 +3,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/screens/home_screen.dart';
-import 'package:flutter_travel_ui/screens/welcome.dart';
 import 'package:provider/provider.dart';
-import 'login/login_main.dart';
 import 'login/provider/google_sign_in.dart';
 
 void main() async {

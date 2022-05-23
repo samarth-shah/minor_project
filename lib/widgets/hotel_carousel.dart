@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/models/hotel_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../screens/destination_screen.dart';
+import '../screens/destination_abroad_screen.dart';
 
 class HotelCarousel extends StatelessWidget {
   @override
@@ -48,8 +48,8 @@ class HotelCarousel extends StatelessWidget {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => DestinationScreen(
-                      destinatio: hotel,
+                    builder: (_) => DestinationAbroadScreen(
+                      destination: hotel,
                     ),
                   ),
                 ),

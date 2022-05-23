@@ -5,7 +5,6 @@ import 'package:flutter_travel_ui/login/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 import '../../screens/welcome.dart';
-import 'home_page.dart';
 
 class LoggedInWidget extends StatefulWidget {
   @override

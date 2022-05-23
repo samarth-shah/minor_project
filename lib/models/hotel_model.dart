@@ -2,22 +2,18 @@ import 'activity_model.dart';
 
 class AbroadDestination {
   String imageUrl;
-  String name;
-  String address;
-  int price;
   String city;
   String country;
+  String url;
   String description;
   List<Activity> activities;
 
 
   AbroadDestination({
     this.imageUrl,
-    this.name,
-    this.address,
-    this.price,
     this.city,
     this.country,
+    this.url,
     this.description,
     this.activities,
       });
@@ -30,7 +26,7 @@ List<Activity> veniceActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['11:00 pm', '01:00 pm'],
     rating: 4,
-    price: 210,
+    price: 219,
   ),
   Activity(
     imageUrl: 'assets/images/murano.jpg',
@@ -38,7 +34,7 @@ List<Activity> veniceActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['12:30 pm', '02:00 pm'],
     rating: 3,
-    price: 125,
+    price: 129,
   ),
 ];
 
@@ -100,7 +96,7 @@ List<Activity> parisActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['07:00 am', '07:00 pm'],
     rating: 5,
-    price: 1000,
+    price: 109,
   ),
   Activity(
     imageUrl: 'assets/images/louvremuseum.jpg',
@@ -108,7 +104,7 @@ List<Activity> parisActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['10:00 am', '07:00 pm'],
     rating: 4,
-    price: 2100,
+    price: 219,
   ),
   Activity(
     imageUrl: 'assets/images/champs.jpg',
@@ -116,7 +112,7 @@ List<Activity> parisActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 3,
-    price: 1250,
+    price: 129,
   ),
   Activity(
     imageUrl: 'assets/images/seine.jpg',
@@ -299,12 +295,14 @@ List<AbroadDestination> destinations = [
     imageUrl: 'assets/images/venice.jpg',
     city: 'Venice',
     country: 'Italy',
+    url: 'https://goo.gl/maps/uyii18LYsLQ2hidx9',
     description: 'Visit Venice for an amazing and unforgettable adventure.',
     activities: veniceActivities,
   ),
   AbroadDestination(
     imageUrl: 'assets/images/paris.jpg',
     city: 'Paris',
+    url: 'https://goo.gl/maps/hiLMR743SvrRr6qG6',
     country: 'France',
     description: 'Visit Paris for an amazing and unforgettable adventure.',
     activities: parisActivities,
@@ -312,6 +310,7 @@ List<AbroadDestination> destinations = [
   AbroadDestination(
     imageUrl: 'assets/images/newyork.jpg',
     city: 'New York City',
+    url: 'https://goo.gl/maps/btDHXB1c9MRvBqu89',
     country: 'United States',
     description: 'Visit New York for an amazing and unforgettable adventure.',
     activities: newYorkActivities,
