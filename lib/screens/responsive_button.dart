@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../login/Screens/login/login.dart';
+import '../login/login_main.dart';
 
 class ResponsiveButton extends StatelessWidget {
   bool isResponsive;
@@ -12,7 +13,7 @@ class ResponsiveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.of(context)
-          .push(MaterialPageRoute(builder: ((context) => LoginScreen()))),
+          .push(MaterialPageRoute(builder: ((context) => LoginMainScreen()))),
       child: Container(
         width: width,
         height: 60,
