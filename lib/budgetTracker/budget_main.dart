@@ -20,10 +20,10 @@ class BudgetTracker extends StatelessWidget {
             fontWeight: FontWeight.w300,
           ),
         ),
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.indigo,
         floatingActionButtonTheme: FloatingActionButtonThemeData(
-          backgroundColor: Colors.amber,
-          foregroundColor: Colors.black,
+          backgroundColor: Colors.indigo,
+          foregroundColor: Colors.white,
         ),
       ),
       home: MyHomePage(),

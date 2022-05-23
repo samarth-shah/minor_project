@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         title: 'Trippy',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primaryColor: Color(0xFF3EBACE),
+          primaryColor: Colors.indigo,
           accentColor: Color(0xFFD8ECF1),
           scaffoldBackgroundColor: Color(0xFFF3F5F7),
         ),

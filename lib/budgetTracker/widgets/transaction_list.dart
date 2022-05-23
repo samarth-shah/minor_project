@@ -22,7 +22,7 @@ class TransactionList extends StatelessWidget {
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(
-                      "It's lonely out here!",
+                      "Let's Keep a Track on Your Budget",
                       style: TextStyle(
                         color: Colors.grey[300],
                         fontSize: 22.0,

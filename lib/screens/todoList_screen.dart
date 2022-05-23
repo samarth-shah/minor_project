@@ -29,9 +29,11 @@ class TodoListState extends State<TodoList> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Todos'),
+        backgroundColor: Colors.indigo,
       ),
       body: getTodoListView(),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.indigo,
         onPressed: () {
           debugPrint('FAB clicked');
           navigateToDetail(Todo('', '', ''), 'Add Todo');
@@ -51,9 +53,9 @@ class TodoListState extends State<TodoList> {
           elevation: 2.0,
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.amber,
+              backgroundColor: Colors.indigo,
               child: Text(getFirstLetter(this.todoList[position].title),
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
             ),
             title: Text(this.todoList[position].title,
                 style: TextStyle(fontWeight: FontWeight.bold)),

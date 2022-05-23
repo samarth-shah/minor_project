@@ -243,7 +243,7 @@ class _NewTransactionFormState extends State<NewTransactionForm> {
                   ),
                 ),
                 textColor: Colors.white,
-                color: Colors.green[700],
+                color: Colors.indigo,
                 onPressed: _onSubmit,
               ),
             ),
