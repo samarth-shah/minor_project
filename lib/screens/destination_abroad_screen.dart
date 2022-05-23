@@ -1,22 +1,22 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_ui/models/hotel_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:flutter_travel_ui/models/activity_model.dart';
-import 'package:flutter_travel_ui/models/destination_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class DestinationScreen extends StatefulWidget {
-  final Destination destination;
+class DestinationAbroadScreen extends StatefulWidget {
+  final AbroadDestination destination;
 
-  DestinationScreen({this.destination});
+  DestinationAbroadScreen({this.destination});
 
   @override
-  _DestinationScreenState createState() => _DestinationScreenState();
+  _DestinationAbroadScreenState createState() => _DestinationAbroadScreenState();
 }
 
-class _DestinationScreenState extends State<DestinationScreen> {
+class _DestinationAbroadScreenState extends State<DestinationAbroadScreen> {
   Text _buildRatingStars(int rating) {
     String stars = '';
     for (int i = 0; i < rating; i++) {
