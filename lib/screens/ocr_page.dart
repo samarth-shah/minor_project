@@ -54,17 +54,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              // Center(
-              //   child: RaisedButton(
-              //     onPressed: () {
-              //       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => OCRImageScreen()));
-              //     },
-              //     child: Text(
-              //       'Tap to Scan',
-              //       style: TextStyle(fontSize: 16),
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
@@ -77,7 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       texts = await FlutterMobileVision.read(
         camera: _ocrCamera,
-        waitTap: true,
+        multiple: true,
+        autoFocus: true,
+        waitTap: false,
       );
       setState(() {
         _text = texts[0].value;

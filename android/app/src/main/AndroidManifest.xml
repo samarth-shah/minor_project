@@ -8,16 +8,12 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     
-
-    <!-- io.flutter.app.FlutterApplication is an android.app.Application that
-         calls FlutterMain.startInitialization(this); in its onCreate method.
-         In most cases you can leave this as-is, but you if you want to provide
-         additional functionality it is fine to subclass or reimplement
-         FlutterApplication and put your custom class here. -->
+    
     <application
         android:name="${applicationName}"
         android:label="Trippy - Trip Made Easy"
         android:icon="@mipmap/ic_launcher">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -26,13 +22,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
-            <!-- This keeps the window background of the activity showing
-                 until Flutter renders its first frame. It can be removed if
-                 there is no splash screen (such as the default splash screen
-                 defined in @style/LaunchTheme). -->
-            <!-- <meta-data
-                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-                android:value="true" /> -->
+
                 <meta-data android:name="flutterEmbedding" android:value="2"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -40,5 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name="io.github.edufolly.fluttermobilevision.ocr.OcrCaptureActivity" />
+        <activity android:name="io.github.edufolly.fluttermobilevision.barcode.BarcodeCaptureActivity" />
+        <activity android:name="io.github.edufolly.fluttermobilevision.face.FaceCaptureActivity" />
     </application>
 </manifest>

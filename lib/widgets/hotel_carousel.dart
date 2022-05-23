@@ -3,7 +3,6 @@ import 'package:flutter_travel_ui/models/hotel_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../screens/destination_abroad_screen.dart';
-import '../screens/destination_screen.dart';
 
 class HotelCarousel extends StatelessWidget {
   @override
