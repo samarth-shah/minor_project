@@ -12,7 +12,7 @@ class HotelCarousel extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                'Exclusive Hotels',
+                'Top Abroad Destions',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
