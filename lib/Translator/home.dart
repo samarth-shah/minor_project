@@ -30,7 +30,7 @@ class _HomeState extends State<HomePage> {
         title: Center(
             child: Text(
           "AI Translator",
-          style: TextStyle(color: colorsUsed.textcolor),
+          style: TextStyle(color: Colors.indigo),
         )),
       ),
       body: screens[currentindex],

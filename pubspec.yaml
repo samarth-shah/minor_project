@@ -105,3 +105,7 @@ fonts:
         weight: 500
       - asset: assets/fonts/Rubik-Regular.ttf
         weight: 400
+  - family: Pacifico
+    fonts:
+      - asset: assets/fonts/Pacifico-Regular.ttf
+        weight: 700
