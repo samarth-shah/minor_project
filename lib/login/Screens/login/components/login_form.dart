@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/login/provider/google_sign_in.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:provider/provider.dart';
 import '../../../../models/constants.dart';
@@ -80,35 +81,41 @@ class _LoginFormState extends State<LoginForm> {
                   ),
                   SizedBox(height: 10),
                   RoundedButton(
-                  colour: kPrimaryColor,
-                  title: 'Log In',
-                  onPressed: () async {
-                    setState(() {
-                      showSpinner = true;
-                    });
-                    try {
-                      final user = await _auth.signInWithEmailAndPassword(
-                          email: email.trim(), password: password);
-                      if (user != null) {
-                         Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
-                        );
-                      }
-                    } catch (e) {
-                      print(e);
-                    }
-                    setState(() {
-                      showSpinner = false;
-                    });
-                  }),
-              Center(child: Text("OR")),
+                      colour: kPrimaryColor,
+                      title: 'Log In',
+                      onPressed: () async {
+                        setState(() {
+                          showSpinner = true;
+                        });
+                        try {
+                          final user = await _auth.signInWithEmailAndPassword(
+                              email: email.trim(), password: password);
+                          if (user != null) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeScreen()),
+                            );
+                            Fluttertoast.showToast(msg: 'Sucessfully Entered!');
+                          } else
+                            Fluttertoast.showToast(
+                                msg: 'Email / Password Invalid');
+                        } catch (e) {
+                          Fluttertoast.showToast(msg: e);
+                          print(e);
+                        }
+                        setState(() {
+                          showSpinner = false;
+                        });
+                      }),
+                  Center(child: Text("OR")),
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(primary: kPrimaryColor),
                     icon: FaIcon(FontAwesomeIcons.google),
                     onPressed: () {
-                      final provider = Provider.of<GoogleSignInProvider>(context,
+                      final provider = Provider.of<GoogleSignInProvider>(
+                          context,
                           listen: false);
                       provider.googleLogin();
                     },
