@@ -35,6 +35,7 @@ dependencies:
   flutter_mobile_vision: ^0.1.4+1
   sqflite: ^2.0.2
   flutter_svg: ^0.19.3
+  shared_preferences: ^0.5.3+5
   fluttertoast: ^8.0.9
   modal_progress_hud: ^0.1.3
   provider: ^6.0.2

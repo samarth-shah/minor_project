@@ -8,8 +8,8 @@ import 'package:flutter_travel_ui/screens/todoList_screen.dart';
 import 'package:flutter_travel_ui/widgets/destination_carousel.dart';
 import 'package:flutter_travel_ui/widgets/hotel_carousel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../currency converter/currencyconverter.dart';
 import '../weather/weather_main.dart';
-
 class HomeMainScreen extends StatefulWidget {
   @override
   _HomeMainScreenState createState() => _HomeMainScreenState();
@@ -24,6 +24,7 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
     FontAwesomeIcons.temperatureArrowUp,
     FontAwesomeIcons.solidListAlt,
     FontAwesomeIcons.moneyBill,
+    FontAwesomeIcons.moneyBillTransfer,
   ];
 
   Widget _buildIcon(int index) {
@@ -44,6 +45,10 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
         if (index == 4) {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (context) => BudgetTracker()));
+        }
+        if (index == 5) {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => CurrencyConverter()));
         }
 
         setState(() {
