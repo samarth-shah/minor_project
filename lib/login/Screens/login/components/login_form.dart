@@ -90,6 +90,9 @@ class _LoginFormState extends State<LoginForm> {
                         try {
                           final user = await _auth.signInWithEmailAndPassword(
                               email: email.trim(), password: password);
+                          if (user == null)
+                            Fluttertoast.showToast(
+                                msg: 'Please Check Email and Password');
                           if (user != null) {
                             Navigator.push(
                               context,
@@ -97,11 +100,8 @@ class _LoginFormState extends State<LoginForm> {
                                   builder: (context) => HomeScreen()),
                             );
                             Fluttertoast.showToast(msg: 'Sucessfully Entered!');
-                          } else
-                            Fluttertoast.showToast(
-                                msg: 'Email / Password Invalid');
+                          }
                         } catch (e) {
-                          Fluttertoast.showToast(msg: e);
                           print(e);
                         }
                         setState(() {

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/login/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
+import '../../screens/welcome.dart';
 import 'home_page.dart';
 
 class LoggedInWidget extends StatefulWidget {
@@ -52,7 +53,7 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
                     else
                       provider.logOut();
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomePage1()));
+                        MaterialPageRoute(builder: (context) => WelcomePage()));
                   },
                   child: const Text('LogOut'),
                 ),
