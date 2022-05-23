@@ -1,13 +1,18 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
-import 'package:flutter_travel_ui/login/Screens/login/login.dart';
+
+import '../login/login.dart';
+
 class ResponsiveButton extends StatelessWidget {
   bool isResponsive;
   double width;
-  ResponsiveButton({this.isResponsive=false, this.width});
+  ResponsiveButton({this.isResponsive = false, this.width});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => LoginScreen(),
+      onTap: () => Navigator.of(context)
+          .push(MaterialPageRoute(builder: ((context) => LoginScreen()))),
       child: Container(
         width: width,
         height: 60,
