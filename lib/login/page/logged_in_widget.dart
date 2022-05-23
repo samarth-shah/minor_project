@@ -77,7 +77,7 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
           ),
           CircleAvatar(
             radius: 80,
-            backgroundImage: NetworkImage(user.photoURL),
+            backgroundImage: NetworkImage(user.photoURL) ?? NetworkImage('https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
           ),
           SizedBox(
             height: 10,

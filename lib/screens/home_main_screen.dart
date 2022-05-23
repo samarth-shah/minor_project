@@ -2,6 +2,7 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_ui/Translator/t_main.dart';
 import 'package:flutter_travel_ui/budgetTracker/budget_main.dart';
 import 'package:flutter_travel_ui/screens/ocr_page.dart';
 import 'package:flutter_travel_ui/screens/todoList_screen.dart';
@@ -20,56 +21,65 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
   final user = FirebaseAuth.instance.currentUser;
   List<IconData> _icons = [
     FontAwesomeIcons.globeAsia,
-    FontAwesomeIcons.camera,
+    // FontAwesomeIcons.camera,
+    FontAwesomeIcons.language,
     FontAwesomeIcons.temperatureArrowUp,
     FontAwesomeIcons.solidListAlt,
     FontAwesomeIcons.moneyBill,
     FontAwesomeIcons.moneyBillTransfer,
+    // FontAwesomeIcons.language,
   ];
 
   Widget _buildIcon(int index) {
-    return GestureDetector(
-      onTap: () {
-        if (index == 2) {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => Weather()));
-        }
-        if (index == 1) {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => OCRScreen()));
-        }
-        if (index == 3) {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => TodoList()));
-        }
-        if (index == 4) {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => BudgetTracker()));
-        }
-        if (index == 5) {
-          Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => CurrencyConverter()));
-        }
-
-        setState(() {
-          _selectedIndex = index;
-        });
-      },
-      child: Container(
-        height: 60.0,
-        width: 60.0,
-        decoration: BoxDecoration(
-          color: _selectedIndex == index
-              ? Theme.of(context).accentColor
-              : Color(0xFFE7EBEE),
-          borderRadius: BorderRadius.circular(30.0),
-        ),
-        child: Icon(
-          _icons[index],
-          size: 25.0,
-          color: _selectedIndex == index
-              ? Theme.of(context).primaryColor
-              : Color(0xFFB4C1C4),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: GestureDetector(
+        onTap: () {
+          if (index == 2) {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Weather()));
+          }
+          if (index == 1) {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => MyTApp()));
+          }
+          if (index == 3) {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => TodoList()));
+          }
+          if (index == 4) {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => BudgetTracker()));
+          }
+          if (index == 5) {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => CurrencyConverter()));
+          }
+          /* if (index == 6) {
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => MyTApp()));
+          } */
+    
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        child: Container(
+          height: 60.0,
+          width: 60.0,
+          decoration: BoxDecoration(
+            color: _selectedIndex == index
+                ? Theme.of(context).accentColor
+                : Color(0xFFE7EBEE),
+            borderRadius: BorderRadius.circular(30.0),
+          ),
+          child: Icon(
+            _icons[index],
+            size: 25.0,
+            color: _selectedIndex == index
+                ? Theme.of(context).primaryColor
+                : Color(0xFFB4C1C4),
+          ),
         ),
       ),
     );
