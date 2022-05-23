@@ -11,7 +11,7 @@ class ResponsiveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.of(context)
-          .push(MaterialPageRoute(builder: ((context) => LoginMainScreen()))),
+          .pushReplacement(MaterialPageRoute(builder: ((context) => LoginMainScreen()))),
       child: Container(
         width: width,
         height: 60,
