@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/Translator/t_main.dart';
 import 'package:flutter_travel_ui/budgetTracker/budget_main.dart';
-import 'package:flutter_travel_ui/screens/ocr_page.dart';
 import 'package:flutter_travel_ui/screens/todoList_screen.dart';
 import 'package:flutter_travel_ui/widgets/destination_carousel.dart';
 import 'package:flutter_travel_ui/widgets/hotel_carousel.dart';
@@ -21,13 +20,11 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
   final user = FirebaseAuth.instance.currentUser;
   List<IconData> _icons = [
     FontAwesomeIcons.globeAsia,
-    // FontAwesomeIcons.camera,
     FontAwesomeIcons.language,
     FontAwesomeIcons.temperatureArrowUp,
     FontAwesomeIcons.solidListAlt,
     FontAwesomeIcons.moneyBill,
     FontAwesomeIcons.moneyBillTransfer,
-    // FontAwesomeIcons.language,
   ];
 
   Widget _buildIcon(int index) {
@@ -55,10 +52,6 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
             Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => CurrencyConverter()));
           }
-          /* if (index == 6) {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => MyTApp()));
-          } */
     
           setState(() {
             _selectedIndex = index;

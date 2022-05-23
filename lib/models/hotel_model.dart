@@ -322,6 +322,7 @@ List<AbroadDestination> destinations = [
     country: 'Europe',
     description: 'Visit Germany for an amazing and unforgettable adventure.',
     activities: germanActivities,
+    url: 'https://goo.gl/maps/btDHXB1c9MRvBqu89',
   ),
 
   AbroadDestination(
@@ -330,6 +331,7 @@ List<AbroadDestination> destinations = [
     country: 'UAE',
     description: 'Visit Dubai for an amazing and unforgettable adventure.',
     activities: dubaiActivities,
+    url: 'https://goo.gl/maps/btDHXB1c9MRvBqu89',
   ),
 
   AbroadDestination(
@@ -338,6 +340,7 @@ List<AbroadDestination> destinations = [
     country: 'Indonesia',
     description: 'Visit Indonesia for an amazing and unforgettable adventure.',
     activities: baliActivities,
+    url: 'https://goo.gl/maps/btDHXB1c9MRvBqu89',
   ),
 
   AbroadDestination(
@@ -346,6 +349,7 @@ List<AbroadDestination> destinations = [
     country: 'Asia',
     description: 'Visit New York for an amazing and unforgettable adventure.',
     activities: honkkongActivities,
+    url: 'https://goo.gl/maps/btDHXB1c9MRvBqu89',
   ),
 
 ];

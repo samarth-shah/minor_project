@@ -2,8 +2,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/login/provider/google_sign_in.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:provider/provider.dart';
-
 import '../../screens/welcome.dart';
 
 class LoggedInWidget extends StatefulWidget {
@@ -47,12 +47,19 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
                   onPressed: () {
                     final provider = Provider.of<GoogleSignInProvider>(context,
                         listen: false);
-                    if (provider.counter == 0)
+                    if (provider.counter == 0) {
                       FirebaseAuth.instance.signOut();
-                    else
+                      Fluttertoast.showToast(
+                          msg: '${user.displayName} LoggedOut Sucessfully');
+                    } else {
                       provider.logOut();
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => WelcomePage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WelcomePage()));
+                      Fluttertoast.showToast(
+                          msg: '${user.displayName} LoggedOut Sucessfully');
+                    }
                   },
                   child: const Text('LogOut'),
                 ),
@@ -77,7 +84,9 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
           ),
           CircleAvatar(
             radius: 80,
-            backgroundImage: NetworkImage(user.photoURL) ?? NetworkImage('https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
+            backgroundImage: NetworkImage(user.photoURL) ??
+                NetworkImage(
+                    'https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
           ),
           SizedBox(
             height: 10,
