@@ -3,12 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui/models/activity_model.dart';
 import 'package:flutter_travel_ui/models/destination_model.dart';
+import 'package:flutter_travel_ui/models/hotel_model.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DestinationScreen extends StatefulWidget {
   final Destination destination;
+  final AbroadDestination destinatio;
 
-  DestinationScreen({this.destination});
+  DestinationScreen({this.destination, this.destinatio});
 
   @override
   _DestinationScreenState createState() => _DestinationScreenState();
@@ -44,11 +46,11 @@ class _DestinationScreenState extends State<DestinationScreen> {
                   ],
                 ),
                 child: Hero(
-                  tag: widget.destination.imageUrl,
+                  tag: widget.destination.imageUrl ?? widget.destinatio.imageUrl,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image(
-                      image: AssetImage(widget.destination.imageUrl),
+                      image: AssetImage(widget.destination.imageUrl) ?? AssetImage(widget.destinatio.imageUrl),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -91,7 +93,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      widget.destination.city,
+                      widget.destination.city ?? widget.destinatio.city,
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 35.0,
@@ -108,7 +110,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                         ),
                         SizedBox(width: 5.0),
                         Text(
-                          widget.destination.country,
+                          widget.destination.country ??  widget.destinatio.country,
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 20.0,
@@ -133,9 +135,9 @@ class _DestinationScreenState extends State<DestinationScreen> {
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.only(top: 10.0, bottom: 15.0),
-              itemCount: widget.destination.activities.length,
+              itemCount: widget.destination.activities.length ?? widget.destinatio.activities.length,
               itemBuilder: (BuildContext context, int index) {
-                Activity activity = widget.destination.activities[index];
+                Activity activity = widget.destination.activities[index] ?? widget.destinatio.activities[index];
                 return Stack(
                   children: <Widget>[
                     Container(
@@ -171,7 +173,7 @@ class _DestinationScreenState extends State<DestinationScreen> {
                                 Column(
                                   children: <Widget>[
                                     Text(
-                                      '\$${activity.price}',
+                                      '₹${activity.price}',
                                       style: TextStyle(
                                         fontSize: 22.0,
                                         fontWeight: FontWeight.w600,

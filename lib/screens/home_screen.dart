@@ -20,8 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
@@ -38,8 +36,9 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: CircleAvatar(
               radius: 15.0,
-              backgroundImage: NetworkImage(user.photoURL) ??
-                  NetworkImage('http://i.imgur.com/zL4Krbz.jpg'),
+              backgroundImage: 
+              // NetworkImage(user.photoURL) ??
+                  NetworkImage('https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
             ),
             label: 'Profile',
           )
