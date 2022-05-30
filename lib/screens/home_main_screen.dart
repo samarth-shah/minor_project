@@ -92,6 +92,7 @@ class _HomeMainScreenState extends State<HomeMainScreen> {
                 style: TextStyle(
                   fontSize: 34.0,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
                 ),
               ),
             ),

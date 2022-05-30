@@ -1,4 +1,3 @@
-// ignore_for_file: deprecated_member_use, unused_field
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../login/page/logged_in_widget.dart';

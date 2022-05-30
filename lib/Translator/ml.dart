@@ -218,7 +218,7 @@ class _ImagetotextState extends State<Imagetotext> {
                             Text(
                               "Convert to",
                               style: TextStyle(
-                                  color: colorsUsed.textcolor,
+                                  color: Colors.red,
                                   fontWeight: FontWeight.bold),
                             ),
                             Container(
