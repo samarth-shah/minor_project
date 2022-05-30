@@ -87,7 +87,7 @@ class _SpeachToTextTranslateState extends State<SpeachToTextTranslate> {
                   child: Text(
                     speechToText,
                     style: const TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 20.0,
                     ),
                   ),

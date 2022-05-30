@@ -38,9 +38,9 @@ class _WelcomePageState extends State<WelcomePage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        AppLargeText(text: "Trips"),
+                        AppLargeText(text: "Trippy"),
                         AppText(
-                          text: "Mountain",
+                          text: "Trips made easy",
                           size: 30,
                         ),
                         SizedBox(
@@ -50,7 +50,10 @@ class _WelcomePageState extends State<WelcomePage> {
                           width: 250,
                           child: AppText(
                             text:
-                                "Mountain hikes give you an incredebile sense of freedom along with endurance test",
+                                "Let's travel and make travelling fun",
+
+
+                                
                             color: Color(0xFF878593),
                             size: 14,
                           ),

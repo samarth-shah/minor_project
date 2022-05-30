@@ -436,14 +436,6 @@ List<Activity> indoreActivities = [
     rating: 4,
     price: 125,
   ),
-
-  Activity(
-    imageUrl: 'assets/images/i7.jpg',
-    name: 'Pipliyapala Regional Park Indore',
-    type: 'Parks',
-    startTimes: ['11:00 AM - 9:00 PM'],
-    rating: 4,
-  ),
 ];
 
 List<Activity> suratActivities = [
@@ -542,6 +534,7 @@ List<Activity> amritsarActivities = [
     name: 'Golden Temple',
     type: 'Religious Sites',
     startTimes: ['10:00 am', '05:00 pm'],
+    price: 0,
     rating: 5,
 
   ),
@@ -568,6 +561,7 @@ List<Activity> amritsarActivities = [
     type: 'Religious Site',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 5,
+    price: 0,
   ),
 
   Activity(
@@ -576,6 +570,7 @@ List<Activity> amritsarActivities = [
     type: 'Sightseeing Tour',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 4,
+    price: 0,
   ),
 
   Activity(
@@ -584,6 +579,7 @@ List<Activity> amritsarActivities = [
     type: 'Religious Sites',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 4,
+    price: 0,
   ),
 
   Activity(
@@ -592,6 +588,7 @@ List<Activity> amritsarActivities = [
     type: 'Religious Sites',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 4,
+    price: 0,
   ),
 
   Activity(
@@ -600,6 +597,7 @@ List<Activity> amritsarActivities = [
     type: 'Religious Sites',
     startTimes: ['09:30 pm', '07:00 pm'],
     rating: 5,
+    price: 0,
   ),
 ];
 

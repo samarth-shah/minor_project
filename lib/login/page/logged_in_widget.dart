@@ -19,6 +19,7 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Profile"),
+        backgroundColor: Colors.indigo,
         centerTitle: true,
         actions: [
           ClipRRect(
@@ -28,13 +29,7 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
                 Positioned.fill(
                   child: Container(
                     decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: <Color>[
-                          Color.fromARGB(255, 255, 0, 0),
-                          Color.fromARGB(255, 255, 66, 66),
-                          Color.fromARGB(255, 255, 126, 126),
-                        ],
-                      ),
+                      color: Colors.indigo,
                     ),
                   ),
                 ),
@@ -70,44 +65,46 @@ class _LoggedInWidgetState extends State<LoggedInWidget> {
       ),
       body: Container(
         alignment: Alignment.center,
-        // color: Colors.blueGrey.shade200,
-        child: Column(children: [
-          SizedBox(
-            height: 160,
-          ),
-          Text(
-            "Profile",
-            style: TextStyle(fontSize: 25),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          CircleAvatar(
-            radius: 80,
-            backgroundImage: NetworkImage(user.photoURL) ??
-                NetworkImage(
-                    'https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            "Name: " + user.displayName,
-            style: TextStyle(fontSize: 25),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            "E-Mail: " + user.email,
-            style: TextStyle(fontSize: 25),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          /* Text("Image: " + user.photoURL,style: TextStyle(fontSize: 18),),
-          SizedBox(height: 10,), */
-        ]),
+         color: Colors.white,
+         padding: EdgeInsets.only(top:80, bottom: 80, left: 1, right: 1),
+        child: Card(
+          elevation: 2,
+          color: Colors.indigo,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            
+          
+            SizedBox(
+              height: 10,
+            ),
+            CircleAvatar(
+              radius: 80,
+              backgroundImage: NetworkImage(user.photoURL) ??
+                  NetworkImage(
+                      'https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-512.png'),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "   Name: " + user.displayName + '  ',
+              style: TextStyle(fontSize: 25,color: Colors.white),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "     E-Mail: " + user.email + '      ',
+              style: TextStyle(fontSize: 25,color: Colors.white),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            /* Text("Image: " + user.photoURL,style: TextStyle(fontSize: 18),),
+            SizedBox(height: 10,), */
+          ]),
+        ),
       ),
     );
   }

@@ -58,10 +58,10 @@ class _TextTranslateState extends State<TextTranslate> {
                   keyboardType: TextInputType.multiline,
                   maxLines: null,
                   controller: textController,
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
                   decoration: const InputDecoration(
                     labelText: 'Enter Text to Translate',
-                    labelStyle: TextStyle(fontSize: 20.0, color: Colors.white),
+                    labelStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                     // hintText: "Enter Text",
                     // hintStyle: TextStyle(fontSize: 20.0, color: Colors.white),
                     border: OutlineInputBorder(
