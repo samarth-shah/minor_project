@@ -4,17 +4,16 @@ Traveling to various countries can be a fun experience but it can turn into a ni
 
 **Login/SignUp Page:**
 
-![image](https://user-images.githubusercontent.com/57283918/179389229-6a13bca7-fcaa-4a45-9cfd-2f368a25e177.gif)
-
+<img src="https://user-images.githubusercontent.com/57283918/179389229-6a13bca7-fcaa-4a45-9cfd-2f368a25e177.gif" width="300"/>
 
 **Home Screen:**
 
-![2](https://user-images.githubusercontent.com/57283918/179389342-60440b12-aedb-468b-82b1-e8c8a092f14f.gif)
+<img src="https://user-images.githubusercontent.com/57283918/179389342-60440b12-aedb-468b-82b1-e8c8a092f14f.gif" width="300"/>
 
 **Other Features:**
 
-![3](https://user-images.githubusercontent.com/57283918/179389450-731c658e-f434-4fb1-8782-5975205e65f4.gif)
+<img src="https://user-images.githubusercontent.com/57283918/179389450-731c658e-f434-4fb1-8782-5975205e65f4.gif" width="300"/>
 
-![4](https://user-images.githubusercontent.com/57283918/179389419-d453c72d-a9b7-4482-99d5-6ee537f2333b.gif)
+<img src="https://user-images.githubusercontent.com/57283918/179389419-d453c72d-a9b7-4482-99d5-6ee537f2333b.gif" width="300"/>
 
-![5](https://user-images.githubusercontent.com/57283918/179389415-377d1182-3da3-4bf6-bbf1-2e5be8f6082d.gif)
+<img src="https://user-images.githubusercontent.com/57283918/179389415-377d1182-3da3-4bf6-bbf1-2e5be8f6082d.gif" width="300"/>
