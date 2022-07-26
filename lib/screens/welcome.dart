@@ -51,9 +51,6 @@ class _WelcomePageState extends State<WelcomePage> {
                           child: AppText(
                             text:
                                 "Let's travel and make travelling fun",
-
-
-                                
                             color: Color(0xFF878593),
                             size: 14,
                           ),
